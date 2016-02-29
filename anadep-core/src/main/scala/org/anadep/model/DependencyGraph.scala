@@ -6,7 +6,7 @@ trait DependencyGraph[V] {
     /**
      * Adds <code>vertex</code> to this graph.
      * Fails if <code>vertex</code> is null. 
-     * Nothing is done if vertsx is already in the graph.
+     * Nothing is done if vertex is already in the graph.
      * 
      * @param vertex    the vertex to add
      * @return <code>true</code> if the add is successful, and <code>false</code> otherwise
@@ -25,6 +25,7 @@ trait DependencyGraph[V] {
     
     def isConnected (from:V,  to:V) : Boolean
     def findEdge (from:V,  to:V) : Dependency[V]
+    def findEdgesTo (to:V) :Iterable[Dependency[V]]                                              
     def containsEdge (edge:Dependency[V]) : Boolean
     def filterVertices (filter : V => Boolean) : Iterable[V]
     def foreach (f : V => Unit) 

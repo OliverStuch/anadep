@@ -6,7 +6,7 @@ abstract class Dependency[Elem](val from:Elem, val to:Elem) extends Observation[
 	    dependencyGraph.findEdge(from, to) == this
 	}	
     }	
-      override def toString = from + " -> " + to
+      override def toString = from + " -> " + getClass().getSimpleName() + " -> " + to
 }
 
 object SomeDependency {  def apply[Elem](elements:Pair[Elem,Elem]) = new SomeDependency(elements._1, elements._2) }
