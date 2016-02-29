@@ -1,0 +1,15 @@
+#*#
+.manager
+*.class
+*.jar
+target
+test-output
+.project
+.classpath
+.settings
+.idea
+*.iml
+*~
+auslieferung*
+bytecode
+lib
