@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <name>anadep-core - part of Analyse Dependencies</name>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>anadep-core</artifactId>
+  <packaging>jar</packaging>
+  <version>0.1</version>
+  <parent>
+    <groupId>org.anadep</groupId>
+    <artifactId>anadep</artifactId>
+    <version>0.1</version>
+<!--     <relativePath>../anadep</relativePath> -->
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>jgrapht</groupId>
+      <artifactId>jgrapht</artifactId>
+      <version>0.7.3</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sf.jung</groupId>
+      <artifactId>jung-graph-impl</artifactId>
+      <version>2.0</version>
+    </dependency> 
+
+    <dependency>
+      <groupId>net.sf.jung</groupId>
+      <artifactId>jung-algorithms</artifactId>
+      <version>2.0</version>
+    </dependency> 
+
+    <dependency>
+      <groupId>asm</groupId>
+      <artifactId>asm-tree</artifactId>
+      <version>3.2</version>
+      <scope>compile</scope>
+    </dependency>
+
+
+  </dependencies>
+</project>

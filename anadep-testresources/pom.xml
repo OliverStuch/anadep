@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <name>anadep-testresource - part of Analyse Dependencies</name>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>anadep-testresources</artifactId>
+  <packaging>pom</packaging>
+  <version>0.1</version>
+  <parent>
+    <groupId>org.anadep</groupId>
+    <artifactId>anadep</artifactId>
+    <version>0.1</version>
+<!--     <relativePath>../anadep</relativePath> -->
+  </parent>
+  <modules>
+    <module>componentA</module>
+    <module>componentB</module>
+    <module>componentC</module>
+    <module>componentD</module>
+    <module>componentDImpl</module>
+  </modules>
+
+</project>
